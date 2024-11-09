@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten el ancho y alto de los elementos */
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .logo{
+        float: left;
+        margin: 25px;
+    }
+
+    .nav {
+        height: auto;
+    }
+
+    .bloque_1, .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img1 {
+        max-width: 90%;
+    }
+
+    .boton, .boton2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloque_1, .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .color-rojo, .color-verde {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .img1 {
+        max-width: 100%;
+    }
+
+    .boton, .boton2 {
+        width: 90%;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .clases {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .precio {
+        flex: 1 1 100%; /* Las tarjetas ocuparán el 100% del ancho en pantallas pequeñas */
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .separador {
+        width: 80%; /* Reducir tamaño del separador en pantallas pequeñas */
+    }
+
+    .img1 {
+        width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    }
+
+    /* Botones adaptables */
+    .boton, .boton2 {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Diseño para pantallas grandes (computadoras de escritorio) */
+@media (min-width: 992px) {
+    .clases {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .precio {
+        flex: 1 1 30%; /* Las tarjetas ocuparán el 30% del ancho en pantallas grandes */
+        max-width: 350px; /* Limitar el ancho para evitar desbordamiento */
+        margin: 20px;
+    }
+}
+
+.linea{
+    margin-top: 30px;
+    width: 380px;
+    border-top: 2px solid;
+}
+
+.linea2{
+    margin-top: 30px;
+    width: 380px;
+    border-top: 2px solid;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 190px;
+    padding-left: 35px;
+}
+
+header ul {
+    display: flex; 
+    justify-content: flex-end;
+    list-style: none; 
+    flex-direction: row; 
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    font-size: 20px;
+    margin: 0 10px; /* Espaciado entre elementos */
+}
+
+header ul li a {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    color: rgb(245, 102, 106);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.h1{
+    margin-top: 30px;
+}
+
+.bloque_1 {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap; /* Para que los elementos se ajusten en pantallas pequeñas */
+}
+
+.img0{
+    margin-right: -15px; /* Ajusta según la cantidad de espacio que quieras reducir */
+    margin-left: -15px;
+}
+
+.img1 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.color-rojo {
+    background-color: rgb(245, 102, 106) !important; /* Asegura que el color rojo se aplique */
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 500px;
+
+}
+
+.font1{
+    background: url(../Multimedia/bloque_1.jpg);
+    height: 500px;
+}
+
+.color-verde {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 196, 125) !important; /* Asegura el color verde */
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 500px;
+}
+
+.font2{
+    background: url(../Multimedia/bloque_2.jpg);
+    height: 500px;
+}
+
+.precio {
+    margin: 20px;
+    padding: 20px;
+    flex: 1 1 30%; /* Ancho de la tarjeta en pantallas grandes */
+    max-width: 350px; /* Limitar el ancho máximo */
+    min-width: 280px; /* Evitar que las tarjetas sean demasiado pequeñas */
+    box-sizing: border-box;
+}
+
+.clase-text {
+    margin-bottom: 20px;
+}
+
+.separador {
+    margin: 10px auto;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+}
+
+.blog{
+    margin-bottom: 70px;
+}
+
+.red-box{
+    display: flex;
+    background-color: rgb(245, 102, 106);
+    height: 50px;
+    justify-content: space-between;
+}
+
+.color-text{
+    color: rgb(245, 102, 106);
+    font-size: 13px
+}
+
+.boton {
+    color: white !important;
+    background-color: rgb(245, 102, 106) !important;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    margin: 20px auto;
+}
+
+.boton:hover{
+    background-color: rgb(238, 150, 153) !important;
+}
+
+.clases {
+    background-color: rgb(236, 234, 234);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-size: 21px;
+}
+
+.fondo{
+    background: url(../Multimedia/chef_bg.jpg);
+    height: 600px;
+    position: absolute;
+}
+
+.white{
+    background-color: white;
+    height: 370px;
+}
+
+.color{
+    width: 40px;
+    background-color: rgb(199, 196, 125);
+    text-align: right;
+    border-radius: 10px;
+}
+
+.galeria{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.boton2 {
+    color: white !important;
+    background-color: rgb(245, 102, 106) !important;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    margin: 20px auto;
+}
+
+.boton2:hover{
+    background-color: rgb(238, 150, 153) !important;
+}
+
+.h1{
+    color: white;
+}
+
+.p{
+    color: white;
+    font-size: 25px;
+}
+
+.texto{
+    font-size: 23px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.footer ul{
+    float: left;
+    display: flex; 
+    margin: 60px;
+    padding: 0;
+    list-style: none; 
+    flex-direction: row; 
+    align-items: center;
+}
+
+.footer li{
+    font: 20px verdana, sans-serif;
+    border-radius: 30px;
+    display: inline;
+    list-style: none;
+    padding: 0px; 
+}
+
+.footer ul li a{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    margin: 0;
+    display: block;
+}
+
+.footer ul li a:hover{
+    text-decoration: none;
+    color: rgb(245, 102, 106);
+}
